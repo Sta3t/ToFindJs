@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "ToFind",
+  "version": "1.0",
+  "description": "自动提取并查询网站指纹信息",
+  "permissions": [
+  "activeTab",
+  "scripting",
+  "storage", 
+  "webRequest",
+  "webRequestBlocking"
+],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  
+  "content_scripts": [
+  {
+    "matches": ["http://*/*", "https://*/*"],
+    "js": ["content.js"],
+    "run_at": "document_idle"
+  }
+]
+}

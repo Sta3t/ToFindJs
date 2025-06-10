@@ -1,0 +1,41 @@
+body {
+  font-family: "Segoe UI", Roboto, sans-serif;
+  background: #f8f9fa;
+  padding: 16px;
+  width: 320px;
+  color: #333;
+}
+
+h3 {
+  margin-top: 0;
+  font-size: 18px;
+  color: #007bff;
+}
+
+#fingerprintResult {
+  margin-top: 12px;
+  padding: 10px;
+  background: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  min-height: 60px;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+button {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 12px;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
