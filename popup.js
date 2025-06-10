@@ -1,4 +1,4 @@
-const FOFA_KEY = 'a2aa22fe8983be8aa152dea907013571';         // 替换为你的FOFA API KEY
+const FOFA_KEY = '';         // 替换为你的FOFA API KEY
 
 function getFingerprint() {
   chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
